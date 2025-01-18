@@ -1,0 +1,14 @@
+document.getElementById("popupButton").addEventListener("click", function() {
+  const message = document.createElement("div");
+  message.textContent = "반가워!";
+  message.style.position = "absolute";
+  message.style.top = "20px";
+  message.style.right = "20px";
+  message.style.backgroundColor = "white";
+  message.style.border = "1px solid black";
+  message.style.padding = "10px";
+  message.style.boxShadow = "0px 4px 6px rgba(0, 0, 0, 0.1)";
+  document.body.appendChild(message);
+  
+  setTimeout(() => message.remove(), 3000); // 3초 후 메시지 삭제
+});
